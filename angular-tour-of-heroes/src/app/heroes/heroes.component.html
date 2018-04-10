@@ -1,4 +1,6 @@
-<p>
-  {{hero.id}} - <input ngModel="hero.name" placeholder="input name">
+<h2>My heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [ngClass]="hero== selectedHero?'selected':''">{{hero.id}}- {{hero.name}}</li>
+</ul>
 
-</p>
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>

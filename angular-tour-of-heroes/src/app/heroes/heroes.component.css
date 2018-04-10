@@ -1,0 +1,7 @@
+ul li {
+ color:red;
+}
+.selected{
+    background-color: green;
+    color:#fff !important;
+}
