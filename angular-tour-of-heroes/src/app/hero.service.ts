@@ -10,7 +10,7 @@ export class HeroService {
 
   constructor(private messageService : MessageService) { }
   getHeroes():Observable<Hero[]>{
-    this.messageService.add('HeroService : getHero()');
+    this.messageService.success('HeroService : getHero()');
     return of(Heroes);
   }
 }
